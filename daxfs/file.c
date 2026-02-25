@@ -13,6 +13,7 @@
 #include <linux/iomap.h>
 #include <linux/dax.h>
 #include <linux/splice.h>
+#include <linux/uaccess.h>
 #include <asm/pgtable.h>
 #include "daxfs.h"
 
@@ -773,6 +774,47 @@ long daxfs_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 		if (fd < 0)
 			dma_buf_put(info->dmabuf);
 		return fd;
+	}
+	case DAXFS_IOC_GET_GPU_INFO: {
+		struct daxfs_gpu_info gi;
+		u64 pcache_off;
+
+		memset(&gi, 0, sizeof(gi));
+
+		gi.dax_phys_addr = daxfs_mem_phys(info, 0);
+		gi.dax_size = info->size;
+
+		if (info->coord) {
+			gi.coord_offset = daxfs_mem_offset(info, info->coord);
+			gi.coord_lock_off = offsetof(struct daxfs_global_coord,
+						     coord_lock);
+			gi.commit_seq_off = offsetof(struct daxfs_global_coord,
+						     commit_sequence);
+		}
+
+		pcache_off = le64_to_cpu(info->super->pcache_offset);
+		if (pcache_off && info->pcache) {
+			struct daxfs_pcache_header *hdr;
+
+			hdr = info->pcache->header;
+			gi.pcache_offset = pcache_off;
+			gi.pcache_slots_offset = pcache_off +
+				le64_to_cpu(hdr->slot_meta_offset);
+			gi.pcache_data_offset = pcache_off +
+				le64_to_cpu(hdr->slot_data_offset);
+			gi.pcache_slot_count = info->pcache->slot_count;
+			gi.pcache_slot_stride =
+				sizeof(struct daxfs_pcache_slot);
+			gi.state_tag_off = offsetof(struct daxfs_pcache_slot,
+						    state_tag);
+			gi.pending_count_off =
+				offsetof(struct daxfs_pcache_header,
+					 pending_count);
+		}
+
+		if (copy_to_user((void __user *)arg, &gi, sizeof(gi)))
+			return -EFAULT;
+		return 0;
 	}
 	}
 	return -ENOTTY;

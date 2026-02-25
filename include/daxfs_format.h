@@ -14,6 +14,29 @@
 
 /* ioctl commands */
 #define DAXFS_IOC_GET_DMABUF	_IO('D', 1)	/* Get dma-buf fd for this mount */
+#define DAXFS_IOC_GET_GPU_INFO	_IOR('D', 2, struct daxfs_gpu_info)
+
+/*
+ * GPU info for PCIe AtomicOps coordination.
+ * Exposes physical addresses and field offsets so a GPU can participate
+ * in the same cmpxchg-based protocols (coord lock, page cache state
+ * machine) via PCIe CAS TLPs.
+ */
+struct daxfs_gpu_info {
+	__u64 dax_phys_addr;		/* Physical base of DAX region */
+	__u64 dax_size;			/* Total DAX region size */
+	__u64 coord_offset;		/* Offset of daxfs_global_coord from base */
+	__u32 coord_lock_off;		/* offsetof(coord_lock) within coord */
+	__u32 commit_seq_off;		/* offsetof(commit_sequence) within coord */
+	__u64 pcache_offset;		/* Offset of pcache region (0 = none) */
+	__u64 pcache_slots_offset;	/* Offset of slot metadata array */
+	__u64 pcache_data_offset;	/* Offset of slot data area */
+	__u32 pcache_slot_count;	/* Number of cache slots */
+	__u32 pcache_slot_stride;	/* sizeof(daxfs_pcache_slot) = 16 */
+	__u32 state_tag_off;		/* offsetof(state_tag) in slot = 0 */
+	__u32 pending_count_off;	/* offsetof(pending_count) in pcache_header */
+	__u64 reserved[4];
+};
 
 #define DAXFS_SUPER_MAGIC	0x64617835	/* "dax5" */
 #define DAXFS_VERSION		5

@@ -13,9 +13,12 @@ tools:
 tests:
 	$(MAKE) -C tests
 
+gpu:
+	$(MAKE) -C tools gpu
+
 clean:
 	$(MAKE) -C daxfs clean
 	$(MAKE) -C tools clean
 	$(MAKE) -C tests clean
 
-.PHONY: all daxfs tools tests clean
+.PHONY: all daxfs tools tests gpu clean
