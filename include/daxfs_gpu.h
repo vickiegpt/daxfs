@@ -20,14 +20,19 @@
 
 #ifdef __CUDACC__
 
-/* Re-export the state/tag helpers so GPU code matches kernel conventions */
+/* Re-export the state/tag helpers so GPU code matches kernel conventions.
+ * Guarded so this header can coexist with daxfs_format.h. */
+#ifndef PCACHE_STATE_FREE
 #define PCACHE_STATE_FREE    0
 #define PCACHE_STATE_PENDING 1
 #define PCACHE_STATE_VALID   2
+#endif
 
+#ifndef PCACHE_STATE
 #define PCACHE_STATE(v)        ((v) & 3ULL)
 #define PCACHE_TAG(v)          ((v) >> 2)
 #define PCACHE_MAKE(state, tag) (((unsigned long long)(tag) << 2) | (state))
+#endif
 
 /*
  * =========================================================================
