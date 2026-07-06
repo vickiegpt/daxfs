@@ -1,0 +1,5 @@
+worker,ops,requested_ops,mismatches,bytes,worker_elapsed_s,error,failed_index,failed_path
+0,128,128,0,3364,0.017254352569580078,,,
+1,25,128,0,765,0.004035234451293945,OSError: [Errno 6] No such device or address: '/mnt/probe_nvme0n1p4/daxfs_eval_mount/.daxfs_eval_e2_20260705_210901/worker_01/f0025.dat',25,/mnt/probe_nvme0n1p4/daxfs_eval_mount/.daxfs_eval_e2_20260705_210901/worker_01/f0025.dat
+2,128,128,0,3986,0.017071247100830078,,,
+3,33,128,0,1013,0.004932403564453125,OSError: [Errno 6] No such device or address: '/mnt/probe_nvme0n1p4/daxfs_eval_mount/.daxfs_eval_e2_20260705_210901/worker_03/f0033.dat',33,/mnt/probe_nvme0n1p4/daxfs_eval_mount/.daxfs_eval_e2_20260705_210901/worker_03/f0033.dat

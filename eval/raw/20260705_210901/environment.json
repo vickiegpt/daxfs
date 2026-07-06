@@ -1,0 +1,28 @@
+{
+  "df_repo": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p4  621G  472G  124G  80% /mnt/probe_nvme0n1p4\n",
+  "dma_heap_system_exists": false,
+  "free_h": "               total        used        free      shared  buff/cache   available\nMem:           251Gi       6.2Gi        28Gi       1.7Gi       220Gi       244Gi\nSwap:             0B          0B          0B\n",
+  "git": {
+    "commit": "418886d3970ba3165975e418605f0d39b566cd73",
+    "short_commit": "418886d",
+    "status_short": "M .gitignore\n?? eval/"
+  },
+  "id": "uid=0(root) gid=0(root) groups=0(root)",
+  "kernel_build_dir": "/lib/modules/6.7.9+/build",
+  "kernel_build_dir_exists": false,
+  "lscpu": "Architecture:        riscv64\nByte Order:          Little Endian\nCPU(s):              32\nOn-line CPU(s) list: 0-31\n",
+  "mounts_daxfs": "none on /mnt/probe_nvme0n1p4/daxfs_eval_mount type daxfs (rw,relatime,phys=0x21179200000,size=1073741824,overlay)\n",
+  "repo": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs",
+  "timestamp_utc": "2026-07-05T21:09:01Z",
+  "tools": {
+    "cc": "/usr/bin/cc",
+    "fio": null,
+    "gcc": "/usr/bin/gcc",
+    "make": "/usr/bin/make",
+    "numactl": "/usr/bin/numactl",
+    "perf": "/usr/bin/perf",
+    "python3": "/usr/bin/python3",
+    "taskset": "/usr/bin/taskset"
+  },
+  "uname": "Linux ubuntu 6.7.9+ #19 SMP Wed May 27 14:40:35 CST 2026 riscv64 riscv64 riscv64 GNU/Linux"
+}

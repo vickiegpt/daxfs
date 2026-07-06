@@ -1,0 +1,11 @@
+{
+  "csv": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_210901/e2_correctness_workers.csv",
+  "errors": 2,
+  "files_per_worker": 128,
+  "mismatches": 0,
+  "mountpoint": "/mnt/probe_nvme0n1p4/daxfs_eval_mount",
+  "operations": 314,
+  "requested_operations": 512,
+  "wall_elapsed_s": 0.03939080238342285,
+  "workers": 4
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/daxfs_eval.py",
+    "--skip-build",
+    "--only",
+    "e3",
+    "--mountpoint",
+    "/mnt/probe_nvme0n1p4/daxfs_eval_mount",
+    "--max-workers",
+    "4",
+    "--write-mib-per-worker",
+    "16"
+  ],
+  "repo": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs",
+  "run_id": "20260705_210936",
+  "timestamp_utc": "2026-07-05T21:09:36Z"
+}

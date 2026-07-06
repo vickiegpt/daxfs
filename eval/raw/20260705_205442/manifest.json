@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/daxfs_eval.py",
+    "--skip-build",
+    "--only",
+    "e5",
+    "--mountpoint",
+    "/mnt/probe_nvme0n1p4/daxfs_eval_mount",
+    "--baseline-dir",
+    "/dev/shm/daxfs_eval_baseline",
+    "--baseline-dir",
+    "/mnt/probe_nvme0n1p4/daxfs_eval_ext4_baseline",
+    "--e5-file-mib",
+    "32",
+    "--e5-meta-files",
+    "1000"
+  ],
+  "repo": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs",
+  "run_id": "20260705_205442",
+  "timestamp_utc": "2026-07-05T20:54:42Z"
+}

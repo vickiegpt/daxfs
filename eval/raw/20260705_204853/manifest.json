@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/daxfs_eval.py",
+    "--mountpoint",
+    "/mnt/probe_nvme0n1p4/daxfs_eval_mount",
+    "--baseline-dir",
+    "/dev/shm/daxfs_eval_baseline",
+    "--baseline-dir",
+    "/mnt/probe_nvme0n1p4/daxfs_eval_ext4_baseline",
+    "--max-workers",
+    "4",
+    "--max-instances",
+    "4",
+    "--files-per-worker",
+    "128",
+    "--write-mib-per-worker",
+    "16",
+    "--cache-base-files",
+    "16",
+    "--cache-file-kib",
+    "512",
+    "--e5-file-mib",
+    "32",
+    "--e5-meta-files",
+    "1000"
+  ],
+  "repo": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs",
+  "run_id": "20260705_204853",
+  "timestamp_utc": "2026-07-05T20:48:53Z"
+}

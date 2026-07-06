@@ -16,6 +16,9 @@ modules.builtin.modinfo
 # User-space tool binaries
 /tools/mkdaxfs
 /tools/daxfs-inspect
+/tests/test_mmap
+__pycache__/
+/eval/raw/*/work/
 
 # Release tarballs
 /daxfs-*.tar.gz

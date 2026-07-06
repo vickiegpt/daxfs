@@ -1,0 +1,4 @@
+target,operation,bytes,ops,elapsed_s,throughput_mib_s
+baseline_0_tmpfs,seq_write,33554432,1,0.021979570388793945,1455.8974281096444
+baseline_0_tmpfs,seq_read,33554432,1,0.020161867141723633,1587.1545911429077
+baseline_0_tmpfs,create_stat,0,1000,0.0797274112701416,0

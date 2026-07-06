@@ -1,0 +1,5 @@
+{"dma_heap_system_exists": false, "kernel_build_dir_exists": false, "phase": "environment", "status": "ok", "ts_unix": 1783285776.479595}
+{"phase": "build_userspace", "reason": "--skip-build", "status": "skipped", "ts_unix": 1783285776.47986}
+{"phase": "build_module", "reason": "--skip-build", "status": "skipped", "ts_unix": 1783285776.480009}
+{"csv": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_210936/e3_write_scaling.csv", "phase": "e3_write_scaling", "rows": 3, "status": "ok", "ts_unix": 1783285776.764679}
+{"output_dir": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_210936", "phase": "run", "status": "complete", "ts_unix": 1783285776.7657049}

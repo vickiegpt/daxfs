@@ -1,0 +1,10 @@
+Scanning /mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_204853/work/e1_image_footprint/source...
+Found 15 files
+Base image size: 33583104 bytes (32.03 MB)
+Total image size: 33587200 bytes (32.03 MB)
+Mode: static (read-only)
+Writing to /mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_204853/work/e1_image_footprint/static_overlay_requested_file_output.daxfs...
+Image layout (static):
+  Superblock:    0x0 - 0x1000
+  Base image:    0x1000 - 0x2008000 (33583104 bytes)
+Done

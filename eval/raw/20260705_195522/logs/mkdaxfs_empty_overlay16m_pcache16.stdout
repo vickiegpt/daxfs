@@ -1,0 +1,10 @@
+Empty mode: overlay + pcache
+Overlay: 65536 buckets, 16777216 byte pool (16.00 MB)
+Page cache: 16 slots (73728 bytes)
+Total size: 17907712 bytes (17.08 MB)
+Writing to /mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_195522/work/e1_image_footprint/empty_overlay16m_pcache16.daxfs...
+Image layout (empty mode):
+  Superblock:    0x0 - 0x1000
+  Overlay:       0x1000 - 0x1102000 (17829888 bytes, 65536 buckets, 16777216 pool)
+  Page cache:    0x1102000 - 0x1114000 (73728 bytes, 16 slots)
+Done

@@ -1,0 +1,5 @@
+{"dma_heap_system_exists": false, "kernel_build_dir_exists": false, "phase": "environment", "status": "ok", "ts_unix": 1783285741.8370986}
+{"phase": "build_userspace", "reason": "--skip-build", "status": "skipped", "ts_unix": 1783285741.8373663}
+{"phase": "build_module", "reason": "--skip-build", "status": "skipped", "ts_unix": 1783285741.837514}
+{"csv": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_210901/e2_correctness_workers.csv", "errors": 2, "files_per_worker": 128, "mismatches": 0, "mountpoint": "/mnt/probe_nvme0n1p4/daxfs_eval_mount", "operations": 314, "phase": "e2_correctness", "requested_operations": 512, "status": "failed", "ts_unix": 1783285741.8843694, "wall_elapsed_s": 0.03939080238342285, "workers": 4}
+{"output_dir": "/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/eval/raw/20260705_210901", "phase": "run", "status": "complete", "ts_unix": 1783285741.889066}

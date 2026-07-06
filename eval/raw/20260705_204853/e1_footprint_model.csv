@@ -1,0 +1,13 @@
+instances,image_label,metric_kind,per_instance_copy_bytes,daxfs_shared_region_bytes,daxfs_base_bytes,daxfs_overlay_bytes,daxfs_pcache_bytes,source_apparent_bytes
+1,static,model_from_image_layout,33554482,33587200,33583104,0,0,33554482
+2,static,model_from_image_layout,67108964,33587200,33583104,0,0,33554482
+3,static,model_from_image_layout,100663446,33587200,33583104,0,0,33554482
+4,static,model_from_image_layout,134217928,33587200,33583104,0,0,33554482
+1,static_overlay_requested_file_output,model_from_image_layout,33554482,33587200,33583104,0,0,33554482
+2,static_overlay_requested_file_output,model_from_image_layout,67108964,33587200,33583104,0,0,33554482
+3,static_overlay_requested_file_output,model_from_image_layout,100663446,33587200,33583104,0,0,33554482
+4,static_overlay_requested_file_output,model_from_image_layout,134217928,33587200,33583104,0,0,33554482
+1,empty_overlay16m_pcache16,model_from_image_layout,33554482,17907712,0,17829888,73728,33554482
+2,empty_overlay16m_pcache16,model_from_image_layout,67108964,17907712,0,17829888,73728,33554482
+3,empty_overlay16m_pcache16,model_from_image_layout,100663446,17907712,0,17829888,73728,33554482
+4,empty_overlay16m_pcache16,model_from_image_layout,134217928,17907712,0,17829888,73728,33554482

@@ -1,0 +1,8 @@
+make -C tools
+make[1]: Entering directory '/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/tools'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/tools'
+make -C tests
+make[1]: Entering directory '/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/probe_nvme0n1p4/699f2705259d246f31782962/daxfs/tests'

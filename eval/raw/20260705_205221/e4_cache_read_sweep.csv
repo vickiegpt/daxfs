@@ -1,0 +1,9 @@
+working_set_ratio,pass,files,total_bytes,elapsed_s,throughput_mib_s,metric_note
+0.5,1,8,4194304,0.005452394485473633,733.6226332589969,read-throughput proxy; inspect counters required for true hit rate
+0.5,2,8,4194304,0.00427556037902832,935.5498801092957,read-throughput proxy; inspect counters required for true hit rate
+1.0,1,16,8388608,0.009158849716186523,873.4721332812703,read-throughput proxy; inspect counters required for true hit rate
+1.0,2,16,8388608,0.008788347244262695,910.2963023249505,read-throughput proxy; inspect counters required for true hit rate
+2.0,1,32,16777216,0.019768476486206055,809.3694024000482,read-throughput proxy; inspect counters required for true hit rate
+2.0,2,32,16777216,0.019344329833984375,827.1157562610925,read-throughput proxy; inspect counters required for true hit rate
+4.0,1,64,33554432,0.043287038803100586,739.2513067377547,read-throughput proxy; inspect counters required for true hit rate
+4.0,2,64,33554432,0.042711734771728516,749.2086231342034,read-throughput proxy; inspect counters required for true hit rate
